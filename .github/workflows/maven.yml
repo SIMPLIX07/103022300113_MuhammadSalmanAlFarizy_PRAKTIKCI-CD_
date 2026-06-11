@@ -30,8 +30,17 @@ jobs:
     - name: Build with Maven
       working-directory: TubesFreelance
       run: mvn -B package
-
+    
     - name: Run unit tests
       working-directory: TubesFreelance
       run: mvn test
 
+    - name: sonar
+      working-directory: TubesFreelance
+      env:
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      run: >
+        mvn -B verify
+        org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
+        -Dsonar.projectKey=SIMPLIX07_103022300113_MuhammadSalmanAlFarizy_PRAKTIKCI-CD_
+        -Dsonar.organization=simplix07
