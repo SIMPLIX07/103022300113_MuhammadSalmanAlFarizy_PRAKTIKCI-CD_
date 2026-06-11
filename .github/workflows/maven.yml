@@ -31,4 +31,7 @@ jobs:
       working-directory: TubesFreelance
       run: mvn -B package
 
+    - name: Run unit tests
+      working-directory: TubesFreelance
+      run: mvn test
 
