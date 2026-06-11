@@ -5,11 +5,11 @@
     <!-- Informasi Proyek -->
     <groupId>io.github.simplix07</groupId>
     <artifactId>tubesfreelance</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.6</version>
     <packaging>jar</packaging>
     <name>TubesFreelance2</name>
 
-    <!-- Properti build untuk konfigurasi sumber dan versi compiler -->
+    <!-- Properti build untuk konfigurasi su mber dan versi comp iler -->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>17</maven.compiler.release>
@@ -19,13 +19,13 @@
     </properties>
 
     <build>
+    <plugins>
         <plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-deploy-plugin</artifactId>
-                <version>3.1.4</version>
-            </plugin>
-        </plugins>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-deploy-plugin</artifactId>
+            <version>3.1.4</version>
+        </plugin>
+    </plugins>
     </build>
     
     <dependencies>
@@ -47,9 +47,7 @@
     <repository>
         <id>github</id>
         <name>GitHub Packages</name>
-        <url>https://maven.pkg.github.com/SIMPLIX07/a</url>
+        <url>https://maven.pkg.github.com/SIMPLIX07/103022300113_MuhammadSalmanAlFarizy_PRAKTIKCI-CD_</url>
     </repository>
 </distributionManagement>
 </project>
-
-
