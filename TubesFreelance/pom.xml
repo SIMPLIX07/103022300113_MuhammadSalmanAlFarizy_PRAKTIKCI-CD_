@@ -5,7 +5,7 @@
     <!-- Informasi Proyek -->
     <groupId>io.github.simplix07</groupId>
     <artifactId>tubesfreelance</artifactId>
-    <version>1.1.9</version>
+    <version>1.0.6</version>
     <packaging>jar</packaging>
     <name>TubesFreelance2</name>
 
@@ -47,7 +47,7 @@
     <repository>
         <id>github</id>
         <name>GitHub Packages</name>
-        <url>https://maven.pkg.github.com/SIMPLIX07/103022300113_MuhammadSalmanAlFarizy_PRAKTIKCI-CD_</url>
+        <url>https://maven.pkg.github.com/SIMPLIX07/a</url>
     </repository>
 </distributionManagement>
 </project>
