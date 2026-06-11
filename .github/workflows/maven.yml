@@ -44,3 +44,19 @@ jobs:
         org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
         -Dsonar.projectKey=SIMPLIX07_103022300113_MuhammadSalmanAlFarizy_PRAKTIKCI-CD_
         -Dsonar.organization=simplix07
+        
+    - name: Build Application
+      working-directory: TubesFreelance
+      run: mvn clean package
+
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: TubesFreelance-JAR
+        path: TubesFreelance/target/*.jar
+
+    - name: Publish to GitHub Packages
+      working-directory: TubesFreelance
+      run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
